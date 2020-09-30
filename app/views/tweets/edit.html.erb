@@ -1,0 +1,6 @@
+<%=form_for @tweet,url: {action: :update} do |f| %>
+ <p><%= f.label :message, 'メッセージ'%>
+ <%=f.text_field :message %>
+ </p>
+ <%=f.submit '変更を保存する' %>
+<% end %>
